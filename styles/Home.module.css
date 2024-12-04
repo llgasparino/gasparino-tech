@@ -1,0 +1,194 @@
+/* Container Geral */
+/* styles/Home.module.css */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+}
+
+.header {
+  width: 100vw;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 2rem;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background-color: black;
+  color: white;
+  width: 100vw; /* Ocupa toda a largura da viewport */
+  height: 100vh; /* Ocupa toda a altura da viewport */
+  display: flex; /* Flexbox para alinhamento */
+  flex-direction: column; /* Alinhamento vertical */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margens */
+  box-sizing: border-box; /* Inclui padding e border no tamanho total */
+  position: relative; /* Garante que o elemento ocupe toda a tela */
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  max-width: 100%;
+  text-align: center; /* Centraliza o texto */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center; /* Centraliza o texto */
+}
+
+.cta {
+  background-color: rgb(92, 92, 92);
+  padding: 15px 30px;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.cta:hover {
+  background-color: #4d4d4d;
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2rem; /* Reduz o tamanho do texto em telas menores */
+  }
+
+  .hero p {
+    font-size: 1rem; /* Reduz o tamanho do texto em telas menores */
+  }
+
+  .cta {
+    padding: 10px 20px; /* Ajusta o padding do botão em telas menores */
+    font-size: 1rem; /* Reduz o tamanho do texto do botão em telas menores */
+  }
+
+  .services {
+    grid-template-columns: 1fr; /* Ajusta o layout para uma coluna em telas menores */
+  }
+
+  .service {
+    margin-bottom: 20px; /* Adiciona espaço entre os serviços em telas menores */
+  }
+}
+
+.services {
+  width: 100%; /* Garante que a largura seja 100% */
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta o layout para se adaptar ao tamanho da tela */
+  gap: 30px;
+  padding: 0 20px;
+  justify-items: center;
+  text-align: center;
+}
+
+.service {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%; /* Garante que a largura seja 100% */
+  max-width: 450px; /* Define um tamanho máximo para as divs */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.service h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.service p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px; /* Adiciona espaço entre o parágrafo e a imagem */
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.contact {
+  margin-top: 50px;
+  background-color: #f1f1f1;
+  padding: 50px 20px;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.link {
+  display: inline-block;
+  padding: 15px 30px;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px; /* Adiciona espaço entre os botões */
+}
+
+.linkLinkedIn {
+  background-color: #0077b5; /* Cor do LinkedIn */
+}
+
+.linkLinkedIn:hover {
+  background-color: #005582; /* Cor do LinkedIn ao passar o mouse */
+}
+
+.linkWhatsApp {
+  background-color: #25d366; /* Cor do WhatsApp */
+}
+
+.linkWhatsApp:hover {
+  background-color: #128c7e; /* Cor do WhatsApp ao passar o mouse */
+}
+
+.map {
+  width: 100%;
+  height: 400px; /* Altura do mapa */
+  margin-top: 20px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}

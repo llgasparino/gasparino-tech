@@ -1,0 +1,27 @@
+{
+  "name": "gasparino-tech",
+  "version": "1.0.0",
+  "description": "Site da minha empresa",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "lint:check": "prettier --check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llgasparino/gasparino-tech.git"
+  },
+  "author": "Luiz inho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/llgasparino/gasparino-tech/issues"
+  },
+  "homepage": "https://github.com/llgasparino/gasparino-tech#readme",
+  "dependencies": {
+    "next": "^15.0.3",
+    "prettier": "^3.4.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
