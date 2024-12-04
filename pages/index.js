@@ -29,7 +29,7 @@ export default function Home() {
   }, [])
 
   const validateUrl = (url) => {
-    const allowedUrls = ['https://www.linkedin.com/in/llgasparino', 'https://web.whatsapp.com/send?phone=5541995966299&text=Oi+tudo+bem,+quero+formatar+meu']
+    const allowedUrls = ['https://www.linkedin.com/in/llgasparino', 'https://wa.me/41995966299']
     return allowedUrls.includes(url)
   }
 
@@ -108,7 +108,7 @@ export default function Home() {
         <p>Pronto para melhorar o desempenho do seu computador? Conecte-se comigo!</p>
         <div className={styles.contactForm}>
           <button onClick={() => handleLinkClick('https://www.linkedin.com/in/llgasparino')} className={`${styles.link} ${styles.linkLinkedIn}`}>Visite meu LinkedIn</button>
-          <button onClick={() => handleLinkClick('https://web.whatsapp.com/send?phone=5541995966299&text=Oi+tudo+bem,+quero+formatar+meu')} className={`${styles.link} ${styles.linkWhatsApp}`}>Me mande um WhatsApp</button>
+          <button onClick={() => handleLinkClick('https://wa.me/41995966299')} className={`${styles.link} ${styles.linkWhatsApp}`}>Me mande um WhatsApp</button>
         </div>
         <div id="map" className={styles.map}></div>
       </section>
